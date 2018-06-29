@@ -1,4 +1,4 @@
-/ Shortcut for printing in JavaScript console
+// Shortcut for printing in JavaScript console
 
 
 // getting references;
@@ -53,7 +53,7 @@ function validateForm(ev) {
     }
 
 
-    // provide feedback or error-report
+    // feedback
     
     if (Object.keys(errors).length === 0) {
         console.log(collectedData);
