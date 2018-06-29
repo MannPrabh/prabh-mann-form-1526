@@ -7,12 +7,17 @@ const form = document.querySelector("form");
 const fullname = document.getElementById("fullname");
 const email = document.getElementById("email");
 const message = document.getElementById("message");
-mailformat = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+const pattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
 
-let collectedData = {};
+const collectedData = {
+    fullName: null,
+    email: null,
+    message: null
+};
 
-let errors = [];
+const errors = {};
+
 
 
 function validateForm(ev) {
@@ -53,7 +58,7 @@ function validateForm(ev) {
     }
 
 
-    // feedback
+    // provide feedback or error-report
     
     if (Object.keys(errors).length === 0) {
         console.log(collectedData);
