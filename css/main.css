@@ -17,7 +17,7 @@ legend {
 input[type=text] {
     width: 100%;
     font-size: 1rem;
-    padding: 15px 20px;
+    padding: 10px 20px;
     margin: 20px 0;
     box-sizing: border-box;
 }
@@ -30,12 +30,27 @@ input[type=submit] {
     color: #fff;
 }
 
+#message {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 20px 0;
+    box-sizing: border-box;
+}
+
 textarea {
     width: 100%;
     border: 1px solid #ccc;
 }
 
 /*media query*/
+@media screen and (min-width: 25rem) {
+    
+    .container {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+}
 
 @media screen and (max-width: 25rem) {
 
@@ -56,14 +71,14 @@ textarea {
 }
 
 @media screen and (max-width: 45rem) {
-    input[type=text] {
-      
+    form {
+      padding-top: 20px;
     }
-    
 }
 
-@media screen and (max-width: 50rem) {
-    form {
-        
+@media screen and (min-width: 50rem) {
+   form {
+       padding: 100px;
+       padding-top: 20px;
     }
 }
